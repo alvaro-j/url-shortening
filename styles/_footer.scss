@@ -1,0 +1,50 @@
+@import "variables";
+
+#footer-container {
+	background-color: $veryDarkViolet;
+	width: 100%;
+	footer {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 70px 0;
+	}
+	#logo-footer {
+		filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(331deg)
+			brightness(200%) contrast(106.4%);
+		margin-right: 120px;
+	}
+	ul {
+		list-style: none;
+		flex-basis: 150px;
+
+		span {
+			color: white;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		li {
+			a {
+				color: $gray;
+				margin-top: 5px;
+				font-size: 14px;
+				transition: 0.3s;
+				&:hover {
+					color: $cyan;
+				}
+			}
+		}
+	}
+	#social-medias {
+		display: flex;
+		gap: 25px;
+		transition: 0.3s;
+		a {
+			&:hover {
+				filter: invert(58%) sepia(23%) saturate(1108%) hue-rotate(131deg) brightness(150%) contrast(106%);
+			}
+		}
+	}
+}
