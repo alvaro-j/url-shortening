@@ -40,7 +40,7 @@ Users should be able to:
 - CSS custom properties
 - SASS
 - Flexbox
-- JavaScript(React.js)
+- JavaScript
 - Responsive design with mobile-first workflow
 
 ### What I learned📝
