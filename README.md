@@ -41,7 +41,6 @@ Users should be able to:
 - SASS
 - Flexbox
 - JavaScript
-- Responsive design with mobile-first workflow
 
 ### What I learned📝
 
