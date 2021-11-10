@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links🔗
 
-- Live Site URL: [https://url-shortening-api-red.vercel.app/](https://url-shortening-api-red.vercel.app/)
+- Live Site URL: [URL Shortening Landing Page](https://alvaro-j.github.io/url-shortening/)
 
 ## My process🧩
 
@@ -40,8 +40,7 @@ Users should be able to:
 - CSS custom properties
 - SASS
 - Flexbox
-- JavaScript(React.js)
-- Responsive design with mobile-first workflow
+- JavaScript
 
 ### What I learned📝
 
