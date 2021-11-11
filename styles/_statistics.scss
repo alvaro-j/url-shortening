@@ -26,6 +26,18 @@
 		height: 350px;
 		overflow: visible;
 		margin-top: 60px;
+		position: relative;
+		z-index: 10000;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			width: 50%;
+			height: 0.5rem;
+			background-color: $cyan;
+			z-index: -1;
+		}
 	}
 
 	.card-statistics {
