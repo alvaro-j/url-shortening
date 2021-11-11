@@ -13,6 +13,7 @@
   border-radius: 10px;
   position: relative;
   top: 5rem;
+  background-image: url(../images/bg-shorten-desktop.svg);
   input {
     flex: 1;
     padding: 20px;
@@ -33,6 +34,7 @@
 
 #boost-link {
   background-color: $darkViolet;
+  background-image: url(../images/bg-boost-desktop.svg);
   text-align: center;
   padding: 60px;
   h2 {

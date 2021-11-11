@@ -158,6 +158,7 @@ header #btn-mobile {
 	border-radius: 10px;
 	position: relative;
 	top: 5rem;
+	background-image: url(../images/bg-shorten-desktop.svg);
 }
 
 #shorten-link input {
@@ -183,6 +184,7 @@ header #btn-mobile {
 
 #boost-link {
 	background-color: #3b3054;
+	background-image: url(../images/bg-boost-desktop.svg);
 	text-align: center;
 	padding: 60px;
 }
@@ -387,6 +389,10 @@ img {
 	}
 	#shorten-link {
 		margin: 0 20px;
+		background-image: url(../images/bg-shorten-mobile.svg);
+	}
+	#boost-link {
+		background-image: url(../images/bg-boost-mobile.svg);
 	}
 	#cards-container {
 		padding-bottom: 450px;
