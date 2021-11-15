@@ -22,15 +22,15 @@ const handleShortenLink = async () => {
 		const res = await fetch(url);
 		const data = await res.json();
 		console.log(data);
-		const link = `
-			<div class="div-link">
-			<span>${input.value}</span>
-			<div>
-				<span>${data.result.short_link}</span>
-				<button>Copy</button>
-			</div>
+		const divLink = document.createElement("div");
+		divLink.classList.add("div-link");
+		divLink.innerHTML = `
+		<span>${input.value}</span>
+		<div>
+			<span>${data.result.short_link}</span>
+			<button>Copy</button>
 		</div>`;
-		wrapper.innerHTML += link;
+		wrapper.appendChild(divLink);
 	}
 };
 btnShorten.addEventListener("click", handleShortenLink);
