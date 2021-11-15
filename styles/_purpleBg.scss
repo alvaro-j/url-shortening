@@ -1,50 +1,80 @@
 @import "variables";
 
-#shorten-link {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 50px;
-  background-color: $darkViolet;
-  gap: 20px;
-  border-radius: 10px;
-  position: relative;
-  top: 5rem;
-  background-image: url(../images/bg-shorten-desktop.svg);
-  input {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    outline: none;
-  }
-  button {
-    padding: 20px 40px;
-    border-radius: 10px;
-  }
-  #error {
-    color: $red;
-    width: 100%;
-    display: none;
+#purpleBg-wrapper {
+	position: relative;
+	top: 5rem;
+
+	#shorten-link {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 40px 50px;
+		background-color: $darkViolet;
+		gap: 20px;
+		border-radius: 10px;
+		background-image: url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+		input {
+			flex: 1;
+			padding: 20px;
+			border-radius: 10px;
+			font-size: 18px;
+			outline: none;
+		}
+		button {
+			padding: 20px 40px;
+			border-radius: 10px;
+		}
+		#error {
+			color: $red;
+			width: 100%;
+			display: none;
+		}
+	}
+  .div-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+		max-width: 1200px;
+		margin: 25px auto 0;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+    span {
+      color: $veryDarkBlue;
+      font-size: 18px;
+    }
+    div {
+      span {
+        color: $cyan;
+        margin-right: 20px;
+      }
+      button {
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 7px 30px;
+      }
+    }
   }
 }
 
 #boost-link {
-  background-color: $darkViolet;
-  background-image: url(../images/bg-boost-desktop.svg);
-  text-align: center;
-  padding: 60px;
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
+	background-color: $darkViolet;
+	background-image: url(../images/bg-boost-desktop.svg);
+	text-align: center;
+	padding: 60px;
+	h2 {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
 }
 
 h2 {
-  color: white;
+	color: white;
 }
 
 button {
