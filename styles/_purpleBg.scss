@@ -47,11 +47,15 @@
     span {
       color: $veryDarkBlue;
       font-size: 18px;
+			max-width: 500px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
     }
     div {
       span {
         color: $cyan;
         margin-right: 20px;
+				text-overflow: ellipsis;
       }
       button {
         border-radius: 5px;

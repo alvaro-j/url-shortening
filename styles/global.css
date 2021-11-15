@@ -395,11 +395,15 @@ header #btn-mobile {
 #purpleBg-wrapper .div-link span {
   color: #35323e;
   font-size: 18px;
+  max-width: 500px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #purpleBg-wrapper .div-link div span {
   color: #2acfcf;
   margin-right: 20px;
+  text-overflow: ellipsis;
 }
 
 #purpleBg-wrapper .div-link div button {
