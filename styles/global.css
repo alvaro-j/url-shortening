@@ -1,189 +1,4 @@
-@media (max-width: 1080px) {
-  header {
-    padding: 40px 10px;
-  }
-  #introduction {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #shorten-link {
-    margin: 0 20px;
-    background-image: url(../images/bg-shorten-mobile.svg);
-  }
-  #boost-link {
-    background-image: url(../images/bg-boost-mobile.svg);
-  }
-  #cards-container {
-    padding-bottom: 450px;
-  }
-  #footer-container footer {
-    padding: 40px 10px;
-  }
-}
 
-@media (max-width: 768px) {
-  header #menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 110px;
-    background-color: #3b3054;
-    padding: 30px 15px;
-    margin: 0 20px;
-    border-radius: 8px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 1000;
-    visibility: hidden;
-  }
-  header #menu a {
-    color: white;
-    padding: 15px 0;
-  }
-  header #menu-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  header #menu-links a {
-    margin: 0;
-  }
-  header #menu-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-top: 1px solid rgba(255, 255, 255, 0.205);
-    width: 100%;
-  }
-  header #menu-login a {
-    margin: 0;
-  }
-  header #menu-login button {
-    padding: 10px 20px;
-    -webkit-transition: none;
-    transition: none;
-  }
-  header #btn-mobile {
-    display: block;
-  }
-  header #menu.active {
-    visibility: visible;
-  }
-  header #menu.active #hamburguer {
-    background-color: red;
-  }
-  #btn-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  #hamburguer {
-    display: block;
-    border-top: 3px solid #9e9aa7;
-    width: 23px;
-  }
-  #hamburguer::after, #hamburguer::before {
-    display: block;
-    content: "";
-    width: 23px;
-    height: 3px;
-    background-color: #9e9aa7;
-    margin-top: 5px;
-  }
-  #introduction #image-introduction {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    max-width: 500px;
-    margin-bottom: 40px;
-    position: relative;
-    right: -20px;
-  }
-  #introduction section {
-    text-align: center;
-    padding: 15px;
-  }
-  #introduction section h1 {
-    line-height: 1.3em;
-    overflow: hidden;
-  }
-  #introduction section p {
-    margin: 20px auto;
-    font-size: 16px;
-  }
-  #introduction section button {
-    margin-top: 0;
-  }
-  #shorten-link {
-    margin: 0 20px;
-    padding: 20px;
-  }
-  #shorten-link input {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-  }
-  #shorten-link button {
-    width: 100%;
-    padding: 10px 15px;
-  }
-  #statistics {
-    padding-bottom: 80px;
-  }
-  #statistics #cards-container {
-    padding-bottom: 1100px;
-    gap: 90px;
-  }
-  #statistics #cards-container::after {
-    left: 50%;
-    top: 20%;
-    height: 50rem;
-    width: .5rem;
-  }
-  #statistics .card-statistics img {
-    margin: 0 auto;
-  }
-  #footer-container footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding: 70px 0;
-  }
-  #footer-container #logo-footer {
-    margin: 0 0 30px;
-  }
-  #footer-container #social-medias {
-    margin-top: 20px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-}
 
 header {
   display: -webkit-box;
@@ -618,3 +433,213 @@ img {
   max-width: 100%;
 }
 /*# sourceMappingURL=global.css.map */
+@media (max-width: 1080px) {
+  header {
+    padding: 40px 10px;
+  }
+  #introduction {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #shorten-link {
+    margin: 0 20px;
+    background-image: url(../images/bg-shorten-mobile.svg);
+  }
+  #boost-link {
+    background-image: url(../images/bg-boost-mobile.svg);
+  }
+  #cards-container {
+    padding-bottom: 450px;
+  }
+  #footer-container footer {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 110px;
+    background-color: #3b3054;
+    padding: 30px 15px;
+    margin: 0 20px;
+    border-radius: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    visibility: hidden;
+  }
+  header #menu a {
+    color: white;
+    padding: 15px 0;
+  }
+  header #menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header #menu-links a {
+    margin: 0;
+  }
+  header #menu-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.205);
+    width: 100%;
+  }
+  header #menu-login a {
+    margin: 0;
+  }
+  header #menu-login button {
+    padding: 10px 20px;
+    -webkit-transition: none;
+    transition: none;
+  }
+  header #btn-mobile {
+    display: block;
+  }
+  header #menu.active {
+    visibility: visible;
+  }
+  header #menu.active #hamburguer {
+    background-color: red;
+  }
+  #btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #hamburguer {
+    display: block;
+    border-top: 3px solid #9e9aa7;
+    width: 23px;
+  }
+  #hamburguer::after, #hamburguer::before {
+    display: block;
+    content: "";
+    width: 23px;
+    height: 3px;
+    background-color: #9e9aa7;
+    margin-top: 5px;
+  }
+  #introduction #image-introduction {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: 500px;
+    margin-bottom: 40px;
+    position: relative;
+    right: -20px;
+  }
+  #introduction section {
+    text-align: center;
+    padding: 15px;
+  }
+  #introduction section h1 {
+    line-height: 1.3em;
+    overflow: hidden;
+  }
+  #introduction section p {
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  #introduction section button {
+    margin-top: 0;
+  }
+  #purpleBg-wrapper {
+    margin: 0 20px;
+  }
+  #purpleBg-wrapper .div-link {
+    padding: 0;
+  }
+  #purpleBg-wrapper .div-link span {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  }
+  #purpleBg-wrapper .div-link div {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #purpleBg-wrapper .div-link div button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  #purpleBg-wrapper .div-link div span {
+    border: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  #purpleBg-wrapper #shorten-link {
+    padding: 20px;
+  }
+  #purpleBg-wrapper #shorten-link input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #purpleBg-wrapper #shorten-link button {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  #statistics {
+    padding-bottom: 80px;
+  }
+  #statistics #cards-container {
+    padding-bottom: 1100px;
+    gap: 90px;
+  }
+  #statistics #cards-container::after {
+    left: 50%;
+    top: 20%;
+    height: 50rem;
+    width: 0.5rem;
+  }
+  #statistics .card-statistics img {
+    margin: 0 auto;
+  }
+  #footer-container footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 70px 0;
+  }
+  #footer-container #logo-footer {
+    margin: 0 0 30px;
+  }
+  #footer-container #social-medias {
+    margin-top: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}

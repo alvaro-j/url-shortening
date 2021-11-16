@@ -131,17 +131,41 @@
 			}
 		}
 	}
-	#shorten-link {
+	#purpleBg-wrapper {
 		margin: 0 20px;
-		padding: 20px;
-		input {
-			width: 100%;
-			padding: 10px 15px;
-			font-size: 16px;
+		.div-link {
+			padding: 0;
+			span {
+				margin-bottom: 10px;
+				padding: 10px 15px;
+				width: 100%;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+			}
+			div {
+				width: 100%;
+				padding: 0 15px;
+				button {
+					width: 100%;
+					margin: 10px 0;
+				}
+				span {
+					border: none;
+					margin: 10px 0;
+					padding: 0;
+				}
+			}
 		}
-		button {
-			width: 100%;
-			padding: 10px 15px;
+		#shorten-link {
+			padding: 20px;
+			input {
+				width: 100%;
+				padding: 10px 15px;
+				font-size: 16px;
+			}
+			button {
+				width: 100%;
+				padding: 10px 15px;
+			}
 		}
 	}
 	#statistics {
@@ -153,7 +177,7 @@
 				left: 50%;
 				top: 20%;
 				height: 50rem;
-				width: .5rem;
+				width: 0.5rem;
 			}
 		}
 		.card-statistics {
@@ -169,9 +193,9 @@
 			text-align: center;
 			padding: 70px 0;
 		}
-		#logo-footer{
+		#logo-footer {
 			margin: 0 0 30px;
-			}
+		}
 		#social-medias {
 			margin-top: 20px;
 			flex: 1;
