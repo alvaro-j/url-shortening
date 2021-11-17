@@ -45,16 +45,8 @@ header {
 		}
 
 		button {
-			background-color: $cyan;
-			color: white;
-			border: none;
 			border-radius: 20px;
 			padding: 7px 20px;
-			cursor: pointer;
-			transition: 0.3s;
-			&:hover {
-				filter: opacity(0.5);
-			}
 		}
 	}
 

@@ -1,0 +1,10 @@
+@mixin btn-cyan {
+	background-color: $cyan;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		filter: opacity(0.5);
+	}
+}

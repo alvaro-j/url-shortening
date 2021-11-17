@@ -1,25 +1,25 @@
-@import "responsive";
-@import "variables";
-@import "menu";
-@import "introduction";
-@import "purpleBg";
-@import "statistics";
-@import "footer";
-
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: $veryDarkViolet;
-  overflow-x: hidden; /*hiddes horizontal scrollbar*/
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	color: $veryDarkViolet;
+	overflow-x: hidden; /*hiddes horizontal scrollbar*/
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	@include btn-cyan;
+	border-radius: 30px;
+	padding: 10px 30px;
+	font-size: 18px;
+	font-weight: 700;
 }
