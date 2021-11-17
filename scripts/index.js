@@ -3,6 +3,7 @@ const toggleMenu = () => {
 	const menu = document.querySelector("#menu");
 	menu.classList.toggle("active");
 };
+
 btnMobile.addEventListener("click", toggleMenu);
 
 let btnShorten = document.querySelector("#btn-shorten");
@@ -18,19 +19,38 @@ const handleShortenLink = async () => {
 	} else {
 		input.style.borderColor = "transparent";
 		error.style.display = "none";
+
 		const url = `https://api.shrtco.de/v2/shorten?url=${input.value}`;
 		const res = await fetch(url);
 		const data = await res.json();
+
+		const short_link = data?.result?.short_link ?? ""
+
 		console.log(data);
+
 		const divLink = document.createElement("div");
+
 		divLink.classList.add("div-link");
-		divLink.innerHTML = `
-		<span>${input.value}</span>
-		<div>
-			<span>${data.result.short_link}</span>
-			<button>Copy</button>
-		</div>`;
+
+		const copySpan = document.createElement("span");
+		const copyDiv = document.createElement("div");
+		const copyInnerSpan = document.createElement("span");
+		const copyButton = document.createElement("button");
+
+		copySpan.innerText = input?.value ?? "";
+		copyInnerSpan.innerText = short_link;
+		copyButton.innerText = "Copy";
+
+		copyButton.addEventListener('click', () => navigator.clipboard.writeText(short_link));
+
+		copyDiv.appendChild(copyInnerSpan);
+		copyDiv.appendChild(copyButton);
+
+		divLink.appendChild(copySpan);
+		divLink.appendChild(copyDiv);
+
 		wrapper.appendChild(divLink);
 	}
 };
+
 btnShorten.addEventListener("click", handleShortenLink);
