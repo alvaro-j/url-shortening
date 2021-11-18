@@ -74,7 +74,7 @@ overflow-x: hidden;
 
 ### Useful resources
 
-- 
+- [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) - This helped me to understand how to make a interval before an action execute.
 
 ## Author🙋🏻
 
