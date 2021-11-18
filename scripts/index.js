@@ -13,7 +13,6 @@ let wrapper = document.querySelector("#purpleBg-wrapper");
 
 const handleShortenLink = async () => {
 	if (input.value === "") {
-		console.log("input vazio");
 		input.style.borderColor = "#f46262";
 		error.style.display = "block";
 	} else {
@@ -24,9 +23,7 @@ const handleShortenLink = async () => {
 		const res = await fetch(url);
 		const data = await res.json();
 
-		const short_link = data?.result?.short_link ?? ""
-
-		console.log(data);
+		const short_link = data?.result?.short_link ?? "";
 
 		const divLink = document.createElement("div");
 
@@ -41,7 +38,15 @@ const handleShortenLink = async () => {
 		copyInnerSpan.innerText = short_link;
 		copyButton.innerText = "Copy";
 
-		copyButton.addEventListener('click', () => navigator.clipboard.writeText(short_link));
+		copyButton.addEventListener("click", () => {
+			navigator.clipboard.writeText(short_link);
+			copyButton.style.backgroundColor = "#3b3054";
+			copyButton.innerText = "Copied!";
+			setTimeout(() => {
+				copyButton.style.backgroundColor = "#2acfcf";
+				copyButton.innerText = "Copy";
+			}, 2000);
+		});
 
 		copyDiv.appendChild(copyInnerSpan);
 		copyDiv.appendChild(copyButton);
