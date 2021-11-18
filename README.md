@@ -58,9 +58,18 @@ Users should be able to:
 overflow-x: hidden;
 }
 ```
-- Soon...
-```js
-
+- Use <strong>SASS Mixins</strong>.
+```css
+@mixin btn-cyan {
+	background-color: $cyan;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		filter: opacity(0.5);
+	}
+}
 ```
 
 ### Useful resources
