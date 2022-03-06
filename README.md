@@ -48,7 +48,7 @@ Users should be able to:
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 ```
-- Use <strong>SASS variables</strong> in a React project. SASS variables need to be imported in each file in which i want to use them.
+- Import <strong>SASS variables</strong>. SASS variables need to be imported in each file in which i want to use them.
 ```css
 @import "variables";
 ```
