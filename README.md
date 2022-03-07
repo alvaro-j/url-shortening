@@ -28,6 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
+![image](https://user-images.githubusercontent.com/86482525/157030297-c845c98f-946d-4f69-976c-407fcf808c79.png)
+
 ### Links🔗
 
 - Live Site URL: [URL Shortening Landing Page](https://alvaro-j.github.io/url-shortening/)
